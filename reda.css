@@ -1,0 +1,305 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+header
+{
+    background-color: red;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: ;
+}
+.showcase
+{
+    position: relative;
+    height:100vh ;
+    width: 100%;
+}
+.showcase video
+{
+    width: 600px;
+    height: 65px;
+    position: absolute;
+    top:20px;
+    left: 30px;
+    object-fit: cover;
+}
+.title
+{
+    position: absolute;
+    left: 30px;
+    bottom: 570px;
+    width: 600px;
+    background-color:black;
+    font-size: 70px;
+    color: white;
+    mix-blend-mode: multiply;
+}
+.ICON
+{
+    display: flex;
+    justify-content: end;
+    font-family: inherit;
+    margin: 5px 0 10px 10px;
+
+} 
+nav ul li
+{
+    position: relative;
+    display: inline-block;
+    bottom: 650px;
+}
+nav ul li a
+ {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: white;
+    margin:15px;
+    transition: 0.5s;
+    border-radius: 0 40% 0 40%;
+    padding: 1px;
+    
+ }
+ nav ul li a:hover
+ {
+ transform: scale(1.2);
+ background-color:blueviolet;
+ }
+ .ICON img
+ {
+    border-radius: 100%;
+ }
+ .home
+ {
+     position: relative;
+     top: 100px;
+     background-color: #111 ;
+ }
+ .reda
+ {
+    position: relative;
+    top: 100px;
+     padding: 0;
+     margin: 0;
+     height: 340px;
+     background-color: #111;
+ }
+ .mohamed h1
+ {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: inherit;
+     font-size: 50px;
+     position: relative;
+     top: 50px;
+     color: white;
+ } 
+ span
+ {
+     color:red;
+ }
+   .socail img 
+  {
+     border-radius: 100%;
+     position: relative;
+     left: 600px;
+     top: 90px;
+     margin: 5px;
+     width: 40px;
+     height: 40px;
+     transition: 0.5s;
+  }
+  .socail img:hover
+  {
+   transform: scale(1.2);
+  }
+ .cards
+ {
+     position:relative ;
+     left: 40%;
+     width: 300px;
+     height: 300px;
+     border-radius: 20px;
+    
+ }
+ .cards img
+  {
+     position: relative;
+     left: 10%;
+     width: 280px;
+     height: 280px;
+     border-radius: 100%;
+  }
+  .one
+  {
+     display: grid;
+     grid-auto-flow: column;
+     scroll-behavior: auto;
+     gap: 1.2rem;
+     overflow-y: auto;
+     overscroll-behavior-x: auto;
+     scroll-snap-type: x mandatory;
+     scrollbar-width: none;
+  }
+  .products
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #111;
+}
+.product1
+{
+    position: relative;
+    left: 850px;
+    bottom: 100px;
+}
+.product2
+{
+   position: relative;
+   left: 950px;
+   bottom: 100px;
+}
+.product3
+{
+   position: relative;
+   top: 130px;
+   right:180px ;
+}
+.product4
+{
+   position: relative;
+   right: 600px;
+   bottom: 100px;
+}
+.product5
+{
+   position: relative;
+   right: 1030px;
+   top: 130px;
+}
+.card
+{
+    position: relative;
+    
+    width: 600px; 
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    
+ }
+ .card .circle
+ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    
+ }
+ .card .circle::before
+ {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d83133;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+    
+ }
+ .card:hover .circle::before
+ {
+    background: #00065c;
+    clip-path: circle(400px at center);
+    z-index: 2;
+ }
+ .card img
+ {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    pointer-events: none;
+    transition: 0.5s;
+    background: transparent;
+    
+ }
+ .card:hover img
+ {
+    left: 78%;
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    z-index: 3;
+ }
+ .card .content
+ {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+ }
+ .card:hover .content
+ {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    z-index: 3;
+ }
+ .card .content h2
+ {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+    
+ }
+ .card .content h3
+ {
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: 700;
+ }
+ .card .content p
+ {
+    color:#fff ;
+ }
+ .card .content a
+ {
+    position: relative;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    color: #111;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;
+ }
+  
